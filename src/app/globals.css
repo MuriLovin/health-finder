@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,17 +13,25 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgba(0, 0, 0, 0);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+p::-webkit-scrollbar {
+  width: 1em;
+  height: 3px;
+}
+
+p::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+p::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #05b07f47;
+  outline: 2px solid slategrey;
+}
+
+p::-webkit-scrollbar:vertical {
+  display: none;
 }
