@@ -9,11 +9,11 @@ import {
   SimpleGrid,
   Spinner,
 } from "@chakra-ui/react";
-import { Company } from "../page";
 import { CompanyCard } from "./company-card";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { NotFound } from "./not-found";
+import { Company } from "@/data/get-companies";
 
 export interface CompanyGridProps {
   companies: Company[];
